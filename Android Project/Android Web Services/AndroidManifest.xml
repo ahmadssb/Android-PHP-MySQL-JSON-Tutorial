@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+
+ @author Ahmadssb
+ Created by ahmadssb on 2014-12-13
+ Website: http://www.ahmadssb.com
+ Email: ahmad@ahmadssb.com
+ Facebook: https://www.facebook.com/ahmadssbblog
+ Twitter: https://twitter.com/ahmadssb
+ YouTube: http://www.youtube.com/user/ahmadssbblog
+
+ لا تنسى تغيير اسم الباكج   
+package="com.ahmaadssb.androidwebservices"
+ -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    package="com.ahmaadssb.androidwebservices"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+ <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+ 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="Register Activity" android:name=".RegisterActivity"></activity>
+        
+        <activity android:label="Users Activity" android:name=".UsersActivity"></activity>
+    </application>
+
+</manifest>
